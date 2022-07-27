@@ -17,10 +17,11 @@ public class Test1 {
 		
 		System.out.print("사원월급 : "  );
 		hw.salary = sc.nextInt();
+		sc.nextLine();
 		
 		System.out.print("사원이메일 : "  );
 		hw.email = sc.nextLine();
-		sc.nextLine();
+		//sc.nextLine();    //정수 뒤에 String이 올때는 엔터를 정수 다음으로(이메일 밑에 엔터를 넣으면 출력이 제대로안됨)
 		
 		System.out.print("사원전화번호 : "  );
 		hw.tel = sc.nextLine();
@@ -38,5 +39,4 @@ public class Test1 {
 	System.out.println("정규직여부 : " + hw.flag);
 		
 	}
-
 }
